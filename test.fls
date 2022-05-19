@@ -1,8 +1,8 @@
-PWD /Users/simonhuelskamp/Documents/GitHub/LaTex
+PWD /Users/simonhuelskamp/Documents/GitHub/LaTex-test-Repo
 INPUT /usr/local/texlive/2022/texmf.cnf
 INPUT /usr/local/texlive/2022/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/simonhuelskamp/Documents/GitHub/LaTex/test.tex
+INPUT /Users/simonhuelskamp/Documents/GitHub/LaTex-test-Repo/test.tex
 OUTPUT test.log
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/base/article.cls
