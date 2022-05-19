@@ -1,0 +1,66 @@
+\documentclass[12pt]{article}
+
+\usepackage{graphicx}
+\usepackage{amsmath,amsthm,amsfonts}                % AMS Math
+\usepackage{thmtools}                                       % Theorem Tools
+\usepackage{bm}                                             % Bold Math
+
+\title{LaTex test kram}
+\author{Testautor}
+\date{April 2022}
+
+\begin{document}
+
+\maketitle
+
+% Start vom Fließtext
+\pagebreak
+\section{Einleitung}
+Das ist ein test Text. Hier steht eine Formel direkt im Paragraphen: 
+$\sum_{n = 1}^{\infty} x^n$. Hier steht dann wiederum eine Formel einzeln als Figure:
+\begin{align}
+  \int_{0}^{\infty} 6x^4-\frac{4}{6} \,dx \label{random integral}
+\end{align}
+Eine Formel kann man anhand ihres Labels referenzieren, dann passt sich
+die Zahl automatisch an. Z.B. das integral (\ref{random integral}) wird automatisch
+erkannt. \linebreak
+
+% Tony Bild
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.25\textwidth]{Bilder/Unvernichtet.jpg}
+  \caption{Ein schönes Bild}
+  \label{fig:mesh1}
+\end{figure}
+
+% Liste
+\begin{itemize}
+  \item Das ist ein Listenpunkt!
+  \item Das ist ein weiterer Listenpunkt!!
+\end{itemize}
+% Ein Enter ist egal, wird gedruckt als wäre es in einer Zeile
+Das steht alles in
+einer Zeile
+
+%Eine leere Zeile startet einen neuen Paragraphen
+Das ist ein neuer Paragraph.
+\pagebreak
+
+Die Tabelle \ref{table:data} ist eine vollformatierte Tabelle. Toll!
+\begin{table}[h!]
+\centering
+\begin{tabular}{||c c c c||} 
+ \hline
+ Col1 & Col2 & Col2 & Col3 \\ [0.5ex] 
+ \hline\hline
+ 1 & 6 & 87837 & 787 \\ 
+ 2 & 7 & 78 & 5415 \\
+ 3 & 545 & 778 & 7507 \\
+ 4 & 545 & 18744 & 7560 \\
+ 5 & 88 & 788 & 6344 \\ [1ex] 
+ \hline
+\end{tabular}
+\caption{Eine tolle Tabelle}
+\label{table:data}
+\end{table}
+\end{document}
